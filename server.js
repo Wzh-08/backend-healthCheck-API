@@ -37,7 +37,7 @@ const server = http.createServer((req, res) => {
 
   // 商品查詢 API - 支援價格區間篩選
   if (req.url.startsWith("/api/products") && req.method === "GET") {
-    // 準備 9 個 3C 產品
+    // 準備 10 個 3C 產品
     const products = [
       { id: 1, name: "手機", price: 12900 },
       { id: 2, name: "筆電", price: 32900 },
@@ -48,6 +48,7 @@ const server = http.createServer((req, res) => {
       { id: 7, name: "高階滑鼠", price: 2500 },
       { id: 8, name: "高階鍵盤", price: 4990 },
       { id: 9, name: "高階藍芽", price: 6990 },
+      { id: 10, name: "高階Pencil", price: 6990 },
     ];
 
     // 解析 URL 和 query 參數
